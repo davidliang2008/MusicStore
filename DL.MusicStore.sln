@@ -1,0 +1,52 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2013
+VisualStudioVersion = 12.0.40629.0
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Presentation Layer", "Presentation Layer", "{E90396DC-EC23-4249-9B42-5474E6E805F2}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Domain Layer", "Domain Layer", "{33993C35-C3B5-4979-92D8-C8707C2B57FA}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Infrastructure Layer", "Infrastructure Layer", "{AC003AA7-E478-42C1-B7D4-BC8B00BB4686}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DL.MusicStore.Domain", "DL.MusicStore.Domain\DL.MusicStore.Domain.csproj", "{5EE71EEF-B411-4B3B-8E79-F55572D18031}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DL.MusicStore.Persistence.EF", "DL.MusicStore.Persistence.EF\DL.MusicStore.Persistence.EF.csproj", "{040A5558-83B4-4144-AFE6-598839E916A0}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DL.MusicStore.Web.Mvc", "DL.MusicStore.Web.Mvc\DL.MusicStore.Web.Mvc.csproj", "{662BEFE5-FDF0-4249-B017-F1766008B8EE}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DL.MusicStore.EmailService", "DL.MusicStore.EmailService\DL.MusicStore.EmailService.csproj", "{05A65673-C1BB-46E3-8837-4CEA8C642571}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{5EE71EEF-B411-4B3B-8E79-F55572D18031}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5EE71EEF-B411-4B3B-8E79-F55572D18031}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5EE71EEF-B411-4B3B-8E79-F55572D18031}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5EE71EEF-B411-4B3B-8E79-F55572D18031}.Release|Any CPU.Build.0 = Release|Any CPU
+		{040A5558-83B4-4144-AFE6-598839E916A0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{040A5558-83B4-4144-AFE6-598839E916A0}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{040A5558-83B4-4144-AFE6-598839E916A0}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{040A5558-83B4-4144-AFE6-598839E916A0}.Release|Any CPU.Build.0 = Release|Any CPU
+		{662BEFE5-FDF0-4249-B017-F1766008B8EE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{662BEFE5-FDF0-4249-B017-F1766008B8EE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{662BEFE5-FDF0-4249-B017-F1766008B8EE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{662BEFE5-FDF0-4249-B017-F1766008B8EE}.Release|Any CPU.Build.0 = Release|Any CPU
+		{05A65673-C1BB-46E3-8837-4CEA8C642571}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{05A65673-C1BB-46E3-8837-4CEA8C642571}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{05A65673-C1BB-46E3-8837-4CEA8C642571}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{05A65673-C1BB-46E3-8837-4CEA8C642571}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{5EE71EEF-B411-4B3B-8E79-F55572D18031} = {33993C35-C3B5-4979-92D8-C8707C2B57FA}
+		{040A5558-83B4-4144-AFE6-598839E916A0} = {AC003AA7-E478-42C1-B7D4-BC8B00BB4686}
+		{662BEFE5-FDF0-4249-B017-F1766008B8EE} = {E90396DC-EC23-4249-9B42-5474E6E805F2}
+		{05A65673-C1BB-46E3-8837-4CEA8C642571} = {AC003AA7-E478-42C1-B7D4-BC8B00BB4686}
+	EndGlobalSection
+EndGlobal
