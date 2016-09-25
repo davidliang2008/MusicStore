@@ -50,10 +50,12 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Mappings\AlbumMap.cs" />
+    <Compile Include="Mappings\AlbumStyleMap.cs" />
     <Compile Include="Mappings\ArtistMap.cs" />
-    <Compile Include="Migrations\201609182126553_ArtistTableCreation.cs" />
-    <Compile Include="Migrations\201609182126553_ArtistTableCreation.Designer.cs">
-      <DependentUpon>201609182126553_ArtistTableCreation.cs</DependentUpon>
+    <Compile Include="Migrations\201609252105052_InitAlbumStructures.cs" />
+    <Compile Include="Migrations\201609252105052_InitAlbumStructures.Designer.cs">
+      <DependentUpon>201609252105052_InitAlbumStructures.cs</DependentUpon>
     </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="MSDbContext.cs" />
@@ -73,8 +75,8 @@
     </ProjectReference>
   </ItemGroup>
   <ItemGroup>
-    <EmbeddedResource Include="Migrations\201609182126553_ArtistTableCreation.resx">
-      <DependentUpon>201609182126553_ArtistTableCreation.cs</DependentUpon>
+    <EmbeddedResource Include="Migrations\201609252105052_InitAlbumStructures.resx">
+      <DependentUpon>201609252105052_InitAlbumStructures.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
