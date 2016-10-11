@@ -1,5 +1,4 @@
-﻿using DL.MusicStore.Domain;
-using System;
+﻿using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Web;
@@ -7,7 +6,7 @@ using System.Web.Mvc;
 
 namespace DL.MusicStore.Web.Mvc.Controllers
 {
-    public class HomeController : Controller
+    public class StoreController : Controller
     {
         public ActionResult Index()
         {
