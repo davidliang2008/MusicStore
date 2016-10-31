@@ -10,16 +10,16 @@
 
     <!-- Bootstrap CSS -->
     <link href="~/Content/bootstrap.css" rel="stylesheet" />
+    <link href="~/Content/assets/admin.css" rel="stylesheet" />
 </head>
 <body>
-    <div class="container-fluid">
-        <div class="row">
-            <div class="col-sm-3" style="background-color:purple;">
-                <p>Sidebar</p>
-            </div>
-            <div class="col-md-9" style="background-color:red;">
-                @RenderBody()
-            </div>
+    <div id="sidebar">
+        <p>Sidebar</p>
+    </div>
+    <div id="main">
+        <div class="container-fluid">
+            <p>Main content</p>
+            @RenderBody()
         </div>
     </div>
 
