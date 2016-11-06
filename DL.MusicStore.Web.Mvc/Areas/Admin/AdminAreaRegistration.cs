@@ -19,6 +19,8 @@ namespace DL.MusicStore.Web.Mvc.Areas.Admin
                 "Admin/{controller}/{action}/{id}",
                 new { controller = "dashboard", action = "index", id = UrlParameter.Optional }
             );
+
+            context.Routes.LowercaseUrls = true;
         }
     }
 }

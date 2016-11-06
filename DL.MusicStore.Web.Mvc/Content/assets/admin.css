@@ -2,15 +2,41 @@
     height: 100%;
 }
 
+body {
+    background-color: #eee;
+}
+
 #sidebar {
-    background-color: lightcoral;
+    background-color: #fff;
     position: absolute;
     top: 0;
     bottom: 0;
     width: 200px;
+    border-right: 1px solid #aaa;
+}
+
+#sidebar .sidebar-branding {
+    padding: 10px 0;
+}
+
+#sidebar .sidebar-user-profile {
+    padding: 20px;
+}
+
+#sidebar .sidebar-user-profile img {
+    border: 1px solid #aaa;
+    padding: 10px;
+    background-color: #eee;
+}
+
+#sidebar .sidebar-menu-items .nav-link {
+    padding-left: 20px;
+}
+
+#sidebar .sidebar-menu-items .nav-link:hover {
+    background-color: #eee;
 }
 
 #main {
-    background-color: blue;
     margin-left: 200px;
 }
