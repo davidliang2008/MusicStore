@@ -106,6 +106,7 @@
     <Content Include="Areas\Admin\Views\Shared\_AdminLayout.cshtml" />
     <Content Include="Areas\Admin\Views\Dashboard\Index.cshtml" />
     <Content Include="Areas\Admin\Views\Shared\_AdminSidebar.cshtml" />
+    <Content Include="Areas\Admin\Views\AlbumStyle\Index.cshtml" />
     <None Include="Scripts\jquery-3.0.0.intellisense.js" />
     <Content Include="Scripts\bootstrap.js" />
     <Content Include="Scripts\bootstrap.min.js" />
@@ -120,7 +121,9 @@
   <ItemGroup>
     <Compile Include="App_Start\RouteConfig.cs" />
     <Compile Include="Areas\Admin\AdminAreaRegistration.cs" />
+    <Compile Include="Areas\Admin\Controllers\AlbumStyleController.cs" />
     <Compile Include="Areas\Admin\Controllers\DashboardController.cs" />
+    <Compile Include="Areas\Admin\Models\AlbumStyle\AlbumStyleSummaryViewModel.cs" />
     <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Controllers\StoreController.cs" />
     <Compile Include="Global.asax.cs">
@@ -146,13 +149,16 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
-    <Folder Include="Areas\Admin\Models\" />
     <Folder Include="Models\" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\DL.MusicStore.Domain\DL.MusicStore.Domain.csproj">
       <Project>{5ee71eef-b411-4b3b-8e79-f55572d18031}</Project>
       <Name>DL.MusicStore.Domain</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\DL.MusicStore.Persistence.EF\DL.MusicStore.Persistence.EF.csproj">
+      <Project>{040a5558-83b4-4144-afe6-598839e916a0}</Project>
+      <Name>DL.MusicStore.Persistence.EF</Name>
     </ProjectReference>
   </ItemGroup>
   <PropertyGroup>
