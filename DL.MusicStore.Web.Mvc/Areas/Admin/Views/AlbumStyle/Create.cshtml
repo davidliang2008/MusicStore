@@ -1,0 +1,29 @@
+﻿@model DL.MusicStore.Web.Mvc.Areas.Admin.Models.AlbumStyle.CreateAlbumStyleViewModel
+@{
+    ViewBag.Title = "Create New Style";
+    Layout = "~/Areas/Admin/Views/Shared/_AdminLayout.cshtml";
+}
+
+<h2>
+    Create New Style
+    <small>
+        <a href="@Url.Action("index", "albumStyle", new { area = "admin" })">
+            back to list
+        </a>
+    </small>
+</h2>
+<div class="card card-block">
+    @using (Html.BeginForm("create", "albumStyle", new { area = "admin" },
+        FormMethod.Post, new { @class = "form-create" }))
+    {
+        <div class="form-group">
+            @Html.LabelFor(m => m.StyleName)
+            @Html.TextBoxFor(m => m.StyleName, new { @class = "form-control" })
+        </div>
+        
+        <button type="submit" class="btn btn-success">
+            Create
+        </button>
+    }
+</div>
+
