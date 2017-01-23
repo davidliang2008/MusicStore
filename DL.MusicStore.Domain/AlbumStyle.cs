@@ -39,5 +39,21 @@ namespace DL.MusicStore.Domain
         }
 
         #endregion
+
+        #region Methods
+        
+        public void UpdateName(string name)
+        {
+            if (String.IsNullOrEmpty(name))
+            {
+                throw new ArgumentNullException("name");
+            }
+
+            // Logging
+
+            this.Name = name;
+        }
+
+        #endregion
     }
 }

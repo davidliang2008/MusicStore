@@ -16,6 +16,7 @@
     <table class="table table-sm">
         <thead>
             <tr>
+                <th>Actions</th>
                 <th>#</th>
                 <th>Name</th>
             </tr>
@@ -24,6 +25,15 @@
             @foreach (var style in Model)
             {
                 <tr>
+                    <td>
+                        <a href="@Url.Action("edit", "albumStyle", new { area = "admin", id = style.AlbumStyleId })">
+                            edit
+                        </a>
+                        <span>|</span>
+                        <a href="@Url.Action("delete", "albumStyle", new { area = "admin", id = style.AlbumStyleId })">
+                            delete
+                        </a>
+                    </td>
                     <td>@style.AlbumStyleId</td>
                     <td>@style.AlbumStyleName</td>
                 </tr>

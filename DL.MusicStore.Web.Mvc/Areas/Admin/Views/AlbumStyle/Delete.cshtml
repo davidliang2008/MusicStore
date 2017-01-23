@@ -1,0 +1,29 @@
+﻿@model DL.MusicStore.Web.Mvc.Areas.Admin.Models.AlbumStyle.DeleteAlbumStyleViewModel
+@{
+    ViewBag.Title = "Delete Album Style";
+    Layout = "~/Areas/Admin/Views/Shared/_AdminLayout.cshtml";
+}
+
+<h2>
+    Delete Album Style
+</h2>
+<div class="card card-block">
+    @using (Html.BeginForm("delete", "albumStyle", new { area = "admin" },
+        FormMethod.Post, new { @class = "form-delete" }))
+    {
+        @Html.HiddenFor(m => m.AlbumStyleId)
+
+        <div class="form-group">
+            @Html.LabelFor(m => m.AlbumStyleName)
+            @Html.TextBoxFor(m => m.AlbumStyleName, new { @class = "form-control", @disabled = "disabled" })
+        </div>
+
+        <button type="submit" class="btn btn-danger">
+            Confirm Delete
+        </button>
+        <a href="@Url.Action("index", "albumStyle", new { area = "admin" })" class="btn btn-secondary">
+            Cancel
+        </a>
+    }
+</div>
+

@@ -108,6 +108,8 @@
     <Content Include="Areas\Admin\Views\Shared\_AdminSidebar.cshtml" />
     <Content Include="Areas\Admin\Views\AlbumStyle\Index.cshtml" />
     <Content Include="Areas\Admin\Views\AlbumStyle\Create.cshtml" />
+    <Content Include="Areas\Admin\Views\AlbumStyle\Edit.cshtml" />
+    <Content Include="Areas\Admin\Views\AlbumStyle\Delete.cshtml" />
     <None Include="Scripts\jquery-3.0.0.intellisense.js" />
     <Content Include="Scripts\bootstrap.js" />
     <Content Include="Scripts\bootstrap.min.js" />
@@ -126,6 +128,8 @@
     <Compile Include="Areas\Admin\Controllers\DashboardController.cs" />
     <Compile Include="Areas\Admin\Models\AlbumStyle\AlbumStyleSummaryViewModel.cs" />
     <Compile Include="Areas\Admin\Models\AlbumStyle\CreateAlbumStyleViewModel.cs" />
+    <Compile Include="Areas\Admin\Models\AlbumStyle\DeleteAlbumStyleViewModel.cs" />
+    <Compile Include="Areas\Admin\Models\AlbumStyle\EditAlbumStyleViewModel.cs" />
     <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Controllers\StoreController.cs" />
     <Compile Include="Global.asax.cs">

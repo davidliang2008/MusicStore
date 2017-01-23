@@ -6,11 +6,6 @@
 
 <h2>
     Create New Style
-    <small>
-        <a href="@Url.Action("index", "albumStyle", new { area = "admin" })">
-            back to list
-        </a>
-    </small>
 </h2>
 <div class="card card-block">
     @using (Html.BeginForm("create", "albumStyle", new { area = "admin" },
@@ -24,6 +19,9 @@
         <button type="submit" class="btn btn-success">
             Create
         </button>
+        <a href="@Url.Action("index", "albumStyle", new { area = "admin" })" class="btn btn-secondary">
+            Cancel
+        </a>
     }
 </div>
 
