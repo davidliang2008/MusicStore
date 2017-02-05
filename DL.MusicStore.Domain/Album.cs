@@ -42,6 +42,22 @@ namespace DL.MusicStore.Domain
             this.DatePublished = datePublished;
         }
 
+        public Album(string title, double price, DateTime datePublished, AlbumStyle style, Artist artist)
+            : this(title, price, datePublished)
+        {
+            if (artist == null)
+            {
+                throw new ArgumentNullException("artist");
+            }
+            if (style == null)
+            {
+                throw new ArgumentNullException("style");
+            }
+
+            this.Artist = artist;
+            this.Style = style;
+        }
+
         #endregion
     }
 }
