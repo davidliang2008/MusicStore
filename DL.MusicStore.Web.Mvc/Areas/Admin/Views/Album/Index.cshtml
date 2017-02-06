@@ -1,0 +1,51 @@
+﻿@model List<DL.MusicStore.Web.Mvc.Areas.Admin.Models.Album.AlbumSummaryViewModel>
+@{
+    ViewBag.Title = "Albums";
+    Layout = "~/Areas/Admin/Views/Shared/_AdminLayout.cshtml";
+}
+
+<h2>
+    Albums
+    <small>
+        <a href="@Url.Action("create", "album", new { area = "admin" })">
+            create new
+        </a>
+    </small>
+</h2>
+<div class="card card-block">
+    <table class="table table-sm">
+        <thead>
+            <tr>
+                <th>Actions</th>
+                <th>#</th>
+                <th>Title</th>
+                <th>Price</th>
+                <th>Date published</th>
+                <th>Artist</th>
+                <th>Style</th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var album in Model)
+            {
+                <tr>
+                    <td>
+                        <a href="@Url.Action("edit", "album", new { area = "admin", id = album.AlbumId })">
+                            edit
+                        </a>
+                        <span>|</span>
+                        <a href="@Url.Action("delete", "album", new { area = "admin", id = album.AlbumId })">
+                            delete
+                        </a>
+                    </td>
+                    <td>@album.AlbumId</td>
+                    <td>@album.Title</td>
+                    <td>@album.Price</td>
+                    <td>@album.DatePublished</td>
+                    <td>@album.Artist</td>
+                    <td>@album.Style</td>
+                </tr>
+            }
+        </tbody>
+    </table>
+</div>
