@@ -1,0 +1,29 @@
+﻿@model DL.MusicStore.Web.Mvc.Areas.Admin.Models.Artist.EditArtistViewModel
+@{
+    ViewBag.Title = "Edit Artist";
+    Layout = "~/Areas/Admin/Views/Shared/_AdminLayout.cshtml";
+}
+
+<h2>
+    Edit Artist
+</h2>
+<div class="card card-block">
+    @using (Html.BeginForm("edit", "artist", new { area = "admin" },
+        FormMethod.Post, new { @class = "form-edit" }))
+    {
+        @Html.HiddenFor(m => m.ArtistId)
+
+        <div class="form-group">
+            @Html.LabelFor(m => m.ArtistName)
+            @Html.TextBoxFor(m => m.ArtistName, new { @class = "form-control" })
+        </div>
+
+        <button type="submit" class="btn btn-info">
+            Update
+        </button>
+        <a href="@Url.Action("index", "artist", new { area = "admin" })" class="btn btn-secondary">
+            Cancel
+        </a>
+    }
+</div>
+

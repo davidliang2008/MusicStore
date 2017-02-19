@@ -112,6 +112,10 @@
     <Content Include="Areas\Admin\Views\AlbumStyle\Delete.cshtml" />
     <Content Include="Areas\Admin\Views\Album\Index.cshtml" />
     <Content Include="Areas\Admin\Views\Album\Edit.cshtml" />
+    <Content Include="Areas\Admin\Views\Artist\Index.cshtml" />
+    <Content Include="Areas\Admin\Views\Artist\Create.cshtml" />
+    <Content Include="Areas\Admin\Views\Artist\Edit.cshtml" />
+    <Content Include="Areas\Admin\Views\Artist\Delete.cshtml" />
     <None Include="Scripts\jquery-3.0.0.intellisense.js" />
     <Content Include="Scripts\bootstrap.js" />
     <Content Include="Scripts\bootstrap.min.js" />
@@ -136,6 +140,10 @@
     <Compile Include="Areas\Admin\Models\AlbumStyle\EditAlbumStyleViewModel.cs" />
     <Compile Include="Areas\Admin\Models\Album\AlbumSummaryViewModel.cs" />
     <Compile Include="Areas\Admin\Models\Album\EditAlbumViewModel.cs" />
+    <Compile Include="Areas\Admin\Models\Artist\ArtistSummaryViewModel.cs" />
+    <Compile Include="Areas\Admin\Models\Artist\CreateArtistViewModel.cs" />
+    <Compile Include="Areas\Admin\Models\Artist\DeleteArtistViewModel.cs" />
+    <Compile Include="Areas\Admin\Models\Artist\EditArtistViewModel.cs" />
     <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Controllers\StoreController.cs" />
     <Compile Include="Global.asax.cs">
@@ -161,8 +169,6 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
-    <Folder Include="Areas\Admin\Models\Artist\" />
-    <Folder Include="Areas\Admin\Views\Artist\" />
     <Folder Include="Models\" />
   </ItemGroup>
   <ItemGroup>
