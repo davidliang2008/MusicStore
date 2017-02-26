@@ -12,11 +12,11 @@ namespace DL.MusicStore.Web.Mvc.Areas.Admin.Models.Album
         public string Title { get; set; }
         public double Price { get; set; }
 
-        [Display(Name = "Selected style")]
+        [Display(Name = "Style")]
         public int SelectedStyleId { get; set; }
         public Dictionary<int, string> AvailableStyles { get; set; }
 
-        [Display(Name = "Selected artist")]
+        [Display(Name = "Artist")]
         public int SelectedArtistId { get; set; }
         public Dictionary<int, string> AvailableArtists { get; set; }
     }
