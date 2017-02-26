@@ -59,5 +59,49 @@ namespace DL.MusicStore.Domain
         }
 
         #endregion
+
+        #region Methods
+
+        public void UpdateTitle(string newTitle)
+        {
+            if (String.IsNullOrEmpty(newTitle))
+            {
+                throw new ArgumentNullException("newTitle");
+            }
+
+            this.Title = newTitle;
+        }
+
+        public void UpdatePrice(double newPrice)
+        {
+            if (newPrice < 0)
+            {
+                throw new ArgumentOutOfRangeException("newPrice");
+            }
+
+            this.Price = newPrice;
+        }
+
+        public void UpdateArtist(Artist newArtist)
+        {
+            if (newArtist == null)
+            {
+                throw new ArgumentNullException("newArtist");
+            }
+
+            this.Artist = newArtist;
+        }
+
+        public void UpdateStyle(AlbumStyle newStyle)
+        {
+            if (newStyle == null)
+            {
+                throw new ArgumentNullException("newStyle");
+            }
+
+            this.Style = newStyle;
+        }
+
+        #endregion
     }
 }
