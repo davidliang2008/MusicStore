@@ -1,0 +1,68 @@
+﻿@import "variables.scss";
+@import "../bootstrap/mixins";
+
+$custom-sidebar-width: 200px;
+
+html {
+    height: 100%;
+}
+
+body {
+    background-color: lighten($gray-lighter, 3%);
+}
+
+#sidebar {
+    background-color: $white;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    width: $custom-sidebar-width;
+    border-right: 1px solid $gray;
+
+    .sidebar-branding {
+        padding: 10px;
+    }
+
+    .sidebar-user-profile {
+        padding: 20px;
+
+        img {
+            border: 1px solid $gray;
+            padding: 10px;
+            background-color: $gray-lighter;
+        }
+    }
+
+    .sidebar-menu-items {
+        .nav-link {
+            padding-left: 20px;
+
+            &:focus,
+            &:hover{
+                background-color: $gray-lighter;
+            }
+        }
+    }
+}
+
+#main {
+    margin-left: $custom-sidebar-width;
+}
+
+@include media-breakpoint-up(md) {
+    #sidebar {
+        background-color: $green;
+    }
+}
+
+@include media-breakpoint-up(lg) {
+    #sidebar {
+        background-color: $yellow;
+    }
+}
+
+@include media-breakpoint-up(xl) {
+    #sidebar {
+        background-color: $blue;
+    }
+}

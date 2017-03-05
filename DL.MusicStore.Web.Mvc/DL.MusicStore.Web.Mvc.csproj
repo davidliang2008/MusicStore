@@ -118,7 +118,12 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-    <Content Include="Content\assets\admin.css" />
+    <Content Include="Content\assets\admin.css">
+      <DependentUpon>admin.scss</DependentUpon>
+    </Content>
+    <Content Include="Content\assets\admin.min.css">
+      <DependentUpon>admin.css</DependentUpon>
+    </Content>
     <Content Include="Content\assets\bootstrap.css">
       <DependentUpon>bootstrap.scss</DependentUpon>
     </Content>
@@ -234,6 +239,10 @@
     <Content Include="Content\assets\bootstrap.scss" />
     <Content Include="Content\assets\bootstrap.css.map">
       <DependentUpon>bootstrap.css</DependentUpon>
+    </Content>
+    <Content Include="Content\assets\admin.scss" />
+    <Content Include="Content\assets\admin.css.map">
+      <DependentUpon>admin.css</DependentUpon>
     </Content>
     <None Include="Scripts\jquery-3.1.1.intellisense.js" />
     <Content Include="Scripts\bootstrap.js" />
