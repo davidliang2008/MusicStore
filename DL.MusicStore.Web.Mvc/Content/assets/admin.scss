@@ -18,6 +18,7 @@ body {
     bottom: 0;
     width: $custom-sidebar-width;
     border-right: 1px solid $gray;
+    display: none;
 
     .sidebar-branding {
         padding: 10px;
@@ -46,23 +47,33 @@ body {
 }
 
 #main {
-    margin-left: $custom-sidebar-width;
+    margin-left: 0;
+
+    #sidebar-toggler {
+        cursor: pointer;
+    }
 }
 
-@include media-breakpoint-up(md) {
+.sidebar-open {
     #sidebar {
-        background-color: $green;
+        display: block;
+    }
+
+    #main {
+        margin-left: $custom-sidebar-width;
     }
 }
 
 @include media-breakpoint-up(lg) {
     #sidebar {
-        background-color: $yellow;
+        display: block;
     }
-}
 
-@include media-breakpoint-up(xl) {
-    #sidebar {
-        background-color: $blue;
+    #main {
+        margin-left: $custom-sidebar-width;
+
+        #sidebar-toggler {
+            display: none;
+        }
     }
 }

@@ -20,12 +20,18 @@
     </div>
     <div id="main">
         <div class="container-fluid">
-            <p>Main content</p>
+            <div id="top-nav">
+                <button type="button" id="sidebar-toggler" class="btn">
+                    <i class="fa fa-bars"></i>
+                </button>
+            </div>
             @RenderBody()
         </div>
     </div>
 
     <!-- Global scripts -->
     @Scripts.Render("~/bundles/global")
+
+    <script src="~/scripts/assets/admin/init.js"></script>
 </body>
 </html>

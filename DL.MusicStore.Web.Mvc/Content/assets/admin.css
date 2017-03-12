@@ -13,6 +13,7 @@ body {
   bottom: 0;
   width: 200px;
   border-right: 1px solid #464a4c;
+  display: none;
 }
 
 #sidebar .sidebar-branding {
@@ -39,24 +40,30 @@ body {
 }
 
 #main {
-  margin-left: 200px;
+  margin-left: 0;
 }
 
-@media (min-width: 768px) {
-  #sidebar {
-    background-color: #1bbc9b;
-  }
+#main #sidebar-toggler {
+  cursor: pointer;
+}
+
+.sidebar-open #sidebar {
+  display: block;
+}
+
+.sidebar-open #main {
+  margin-left: 200px;
 }
 
 @media (min-width: 992px) {
   #sidebar {
-    background-color: #ffd500;
+    display: block;
   }
-}
-
-@media (min-width: 1200px) {
-  #sidebar {
-    background-color: #3a5398;
+  #main {
+    margin-left: 200px;
+  }
+  #main #sidebar-toggler {
+    display: none;
   }
 }
 
